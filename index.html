@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Elite Tactical Headwear | Luxury Military Caps</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="navbar">
+    <div class="logo">ELITE HEADWEAR</div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#collection">Collection</a></li>
+      <li><a href="#footer">Contact</a></li>
+    </ul>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <!-- HERO (GRID RESTORED) -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+
+    <div class="hero-grid">
+
+      <!-- LEFT CONTENT -->
+      <div class="hero-left">
+        <div class="script">Elite Division</div>
+
+        <h1 class="hero-title">
+          <span id="typed"></span>
+        </h1>
+
+        <p>
+          Tactical luxury engineered for identity, dominance, and elite presence.
+        </p>
+
+        <button onclick="scrollToSection('collection')">Explore Arsenal</button>
+      </div>
+
+      <!-- RIGHT GRID (RESTORED VISUAL PSYCHOLOGY BLOCK) -->
+      <div class="hero-right">
+        <div class="hero-card"></div>
+        <div class="hero-card"></div>
+        <div class="hero-card"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- VIDEO -->
+  <section class="video-section">
+    <video autoplay muted loop>
+      <source src="https://cdn.coverr.co/videos/coverr-soldiers-walking-4556/1080p.mp4" type="video/mp4">
+    </video>
+
+    <div class="video-overlay">
+      <h2 class="animated-text">ENGINEERED FOR OPERATORS. BUILT FOR STYLE.</h2>
+    </div>
+  </section>
+
+  <!-- COLLECTION -->
+  <section class="collection" id="collection">
+    <h2>Elite Collection</h2>
+
+    <div class="grid">
+      <div class="card">Shadow Operator</div>
+      <div class="card">Desert Recon</div>
+      <div class="card">Urban Tactical</div>
+      <div class="card">Field Commander</div>
+      <div class="card">Stealth Patrol</div>
+      <div class="card">Night Recon</div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="footer">
+
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <h2>ELITE HEADWEAR</h2>
+        <p>Luxury Tactical Identity Systems</p>
+      </div>
+
+      <div class="footer-icons">
+        <a class="icon" href="https://wa.me/27634668020" target="_blank">WhatsApp</a>
+        <a class="icon" href="tel:0634668020">Call</a>
+        <a class="icon" href="mailto:keithmyth2@yahoo.com">Email</a>
+        <a class="icon" href="https://www.linkedin.com/in/keith-gotohori" target="_blank">LinkedIn</a>
+        <a class="icon" href="https://www.freecodecamp.org/wreckless" target="_blank">FreeCodeCamp</a>
+      </div>
+
+      <div class="footer-form">
+        <h3>Join Elite Updates</h3>
+
+        <form id="signupForm">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <input type="email" id="email" placeholder="Your Email" required />
+          <button type="submit">Sign Up</button>
+        </form>
+
+        <p id="formMessage"></p>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
